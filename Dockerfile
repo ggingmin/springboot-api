@@ -32,3 +32,4 @@ COPY --from=builder app/application/ ./
 USER worker
 
 ENTRYPOINT ["java", "org.springframework.boot.loader.JarLauncher"]
+CMD ["-spring.profiles.active=staging"]
