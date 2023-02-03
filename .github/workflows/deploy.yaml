@@ -18,7 +18,7 @@ jobs:
         uses: cloudtype-github-actions/deploy@v1
         with:
           token: ${{ secrets.CLOUDTYPE_TOKEN }}
-          project: ggingmin/gke-seoul-3
+          project: ggingmin-ct/test
           stage: main
           yaml: |
             name: springboot-api
@@ -43,4 +43,3 @@ jobs:
                 url: git@github.com:${{ github.repository }}.git
                 ref: ${{ github.ref }}
               preset: java-springboot
-
